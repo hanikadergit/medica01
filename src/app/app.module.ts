@@ -14,6 +14,14 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HelpComponent } from './pages/help/help.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { LoginComponent } from './pages/login/login.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +30,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     ProfileComponent,
     AboutComponent,
     HelpComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +41,14 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    FlexLayoutModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
